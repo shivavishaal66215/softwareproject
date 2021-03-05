@@ -1,3 +1,5 @@
+window.onresize = function() { location.reload(); }
+
 window.addEventListener("load", function() {
     var cont = document.getElementById("welcome");
 
