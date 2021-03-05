@@ -253,12 +253,9 @@ a.button:hover {
         display: none;
     }
     .index-main-container {
-        font-size: 60px !important;
+        font-size: 50px !important;
     }
     .introduction-index {
         font-size: 15px !important;
-    }
-    .main-container {
-        font-size: 90%;
     }
 }
