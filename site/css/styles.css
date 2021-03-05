@@ -38,12 +38,21 @@ img.logo-img {
     height: 550px;
     width: 400px;
     margin: 0px;
-    position: relative;
+    position: absolute;
     top: 15%;
     left: 5%;
     background-color: white;
     display: inline-block;
     text-align: center;
+    opacity: 0;
+    transition: all 0.5s ease;
+    transition-delay: 2s;
+    transform: translateX(70%);
+}
+
+.moveleft {
+    opacity: 1;
+    transform: translateX(0%);
 }
 
 p.login-header {
@@ -148,13 +157,28 @@ html {
 
 .welcometext {
     font-size: 180px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    transition-delay: 1.5s;
+    transform: translateX(-25%);
 }
 
 .welcomediv {
-    position: relative;
-    left: 150%;
-    bottom: 63%;
+    position: absolute;
+    left: 35%;
+    top: 30%;
     color: white;
+    transition: all 0.5s ease;
+    transition-delay: 1s;
+    opacity: 0;
+}
+
+.fadein {
+    opacity: 1;
+}
+
+.moveright {
+    transform: translateX(0px);
 }
 
 body {
@@ -240,11 +264,24 @@ a.button:hover {
     background-position: -100% 100%;
 }
 
+@media (max-width:1455px) {
+    .welcomediv {
+        display: none;
+    }
+    .login-container {
+        position: absolute;
+        left: 35%;
+        top: 15%;
+        transition-delay: 1s;
+    }
+}
+
 @media (max-width:991px) {
     .login-container {
         position: relative;
         left: 0vw;
         top: 15%;
+        transition-delay: 1s;
     }
     .main-container {
         text-align: center;
@@ -253,9 +290,12 @@ a.button:hover {
         display: none;
     }
     .index-main-container {
-        font-size: 50px !important;
+        font-size: 60px !important;
     }
     .introduction-index {
         font-size: 15px !important;
+    }
+    .main-container {
+        font-size: 90%;
     }
 }
