@@ -38,14 +38,21 @@ img.logo-img {
     height: 475px;
     width: 400px;
     margin: 0px;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    /* bring your own prefixes */
-    transform: translate(-50%, -60%);
+    position: absolute;
+    top: 15%;
+    left: 5%;
     background-color: white;
     display: inline-block;
     text-align: center;
+    opacity: 0;
+    transition: all 0.5s ease;
+    transition-delay: 2s;
+    transform: translateX(70%);
+}
+
+.moveleft {
+    opacity: 1;
+    transform: translateX(0%);
 }
 
 p.login-header {
@@ -150,26 +157,43 @@ html {
 
 .welcometext {
     font-size: 180px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    transition-delay: 1.5s;
+    transform: translateX(-25%);
 }
 
 .welcomediv {
-    position: relative;
-    left: 150%;
-    bottom: 63%;
+    position: absolute;
+    left: 35%;
+    top: 30%;
     color: white;
+    transition: all 0.5s ease;
+    transition-delay: 1s;
+    opacity: 0;
+}
+
+.fadein {
+    opacity: 1;
+}
+
+.moveright {
+    transform: translateX(0px);
 }
 
 body {
     background-image: url("../images/login-page-background1.png");
+    background-repeat: no-repeat;
     height: 100%;
     background-position: center;
 }
 
 .index-main-container {
-    margin-top: 100px;
+    margin-top: 8%;
     font-size: 80px;
     text-align: center;
     color: white;
+    line-height: 90%;
 }
 
 .introduction-index {
@@ -177,16 +201,19 @@ body {
     margin-left: 20%;
     margin-right: 20%;
     font-weight: 10 !important;
+    line-height: normal;
+    margin-top: 3%;
 }
 
 .main-tiles {
-    margin-top: 50px;
+    margin-top: 3%;
     height: 100px;
     width: 100%;
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -25%);
+    line-height: normal;
 }
 
 .left-tile {
@@ -224,7 +251,7 @@ a.button {
     background-color: transparent;
     border: 1px solid #73C5AD;
     border-radius: 100px;
-    padding-top: 8px;
+    padding-top: 12px;
     margin: 5px;
     background-size: 200% 100%;
     background-image: linear-gradient(to right, transparent 50%, #73C5AD 50%);
@@ -237,15 +264,38 @@ a.button:hover {
     background-position: -100% 100%;
 }
 
-@media (max-width:991px) {
+@media (max-width:1455px) {
+    .welcomediv {
+        display: none;
+    }
     .login-container {
         position: absolute;
-        left: 50%;
+        left: 35%;
+        top: 15%;
+        transition-delay: 1s;
+    }
+}
+
+@media (max-width:991px) {
+    .login-container {
+        position: relative;
+        left: 0vw;
+        top: 15%;
+        transition-delay: 1s;
     }
     .main-container {
         text-align: center;
     }
     .welcomediv {
         display: none;
+    }
+    .index-main-container {
+        font-size: 60px !important;
+    }
+    .introduction-index {
+        font-size: 15px !important;
+    }
+    .main-container {
+        font-size: 90%;
     }
 }
