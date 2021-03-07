@@ -239,9 +239,8 @@ a.button:hover {
 
 @media (max-width:991px) {
     .login-container {
-        position: relative;
-        left: 0vw;
-        top: 15%;
+        position: absolute;
+        left: 50%;
     }
     .main-container {
         text-align: center;
