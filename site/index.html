@@ -8,76 +8,37 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles-index.css">
     <link rel="stylesheet" href="css/buttonflip.scss">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-light .nav-custom static-top">
-            <div class="container-fluid">
-                <a class="navbar-brand home-button" href="index.html">
-                    <img class="logo-img" src="images/logo.png" width="50vh" height="">Home
-                </a>
-                <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
-                        </li>
-                    </ul>
-
-                </div>
-            </div>
-        </nav>
-    </header>
 
     <div class="index-main-container">
-        <div>
-            Invigilation Management System
+        <div class="imageright" id="imageright">
+            <div class="actualimage" id="actualimage"></div>
+            <div class="verticalline" id="verticalline"></div>
         </div>
 
-        <div class="slider">
-            <div class="slider-items">
-                <div class="item active">
-                    <img src="images/image_slider1.jpg" />
-                </div>
-                <div class="item">
-                    <img src="images/image_slider2.jpg" />
-                </div>
-                <div class="item">
-                    <img src="images/image_slider2.jpg" />
-                </div>
-
-            </div>
-            <!-- slider controls -->
-            <div class="left-slide">
-                <</div>
-                    <div class="right-slide">></div>
-                    <!-- slider controls -->
-            </div>
-
-
-            <div class="main-tiles">
-                <div class="button-container">
-                    <a href='adminlogin.html' class='button'>Admin Login</a>
-                    <a href='facultylogin.html' class='button'>Faculty Login</a>
+        <div class="leftcontainer ">
+            <div class="logoimg" id="logoimg"></div>
+            <p style="margin-top: 5%; " id="invigilation" class="invigilation">Invigilation</p>
+            <p id="Management" class="Management">Management</p>
+            <p id="System" class="System">System.</p>
+            <div class="sidebar" id="sidebar">
+                <a href="#">About</a>&emsp;<a href="#">Contact</a>&emsp;<a href="#">Services</a></div>
+            <div class="main-tiles" id="main-tiles">
+                <div class="button-container ">
+                    <a href='adminlogin.html' class='button button1' id="adminbutton">Admin</a>
+                    <a href='facultylogin.html' class='button button2' id="facultybutton">Faculty</a>
                 </div>
             </div>
+            <div class="horizontalinetop" id="horizontalinetop"></div>
+            <div class="horizontalinebottom" id="horizontalinebottom"></div>
         </div>
-
-        <script src="js/slider1.js"></script>
-        <script src="js/jquery-2.1.4.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/script.js"></script>
+    </div>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/index-app.js "></script>
 </body>
 
 </html>

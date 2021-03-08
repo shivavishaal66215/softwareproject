@@ -43,10 +43,6 @@ img.logo-img {
     margin-right: 1.548vh;
 }
 
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-
 .login-container {
     height: 56.76vh;
     width: 41.28vh;
@@ -59,7 +55,7 @@ img.logo-img {
     text-align: center;
     opacity: 0;
     transition: all 0.5s ease;
-    transition-delay: 2s;
+    transition-delay: 1.5s;
     transform: translateX(70%);
 }
 
@@ -173,7 +169,7 @@ html {
     font-size: 18.576vh;
     opacity: 1;
     transition: all 0.5s ease;
-    transition-delay: 1.5s;
+    transition-delay: 1s;
     transform: translateX(-25%);
 }
 
@@ -183,7 +179,7 @@ html {
     top: 30%;
     color: white;
     transition: all 0.5s ease;
-    transition-delay: 1s;
+    transition-delay: 0.5s;
     opacity: 0;
 }
 
@@ -362,7 +358,7 @@ a.button:hover {
         position: absolute;
         left: 35%;
         top: 15%;
-        transition-delay: 1s;
+        transition-delay: 0.5s;
     }
 }
 
@@ -371,7 +367,7 @@ a.button:hover {
         position: relative;
         left: 0vw;
         top: 15%;
-        transition-delay: 1s;
+        transition-delay: 0.5s;
     }
     .main-container {
         text-align: center;
