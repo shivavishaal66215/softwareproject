@@ -1,30 +1,42 @@
-window.addEventListener("load", function() {
-    var cont = document.getElementById("welcome");
-
-    var cont3 = document.getElementById("welcometext");
-
-    cont.classList.add('fadein');
-    var timer3 = setInterval(movef, 50);
-    var counter3 = 0;
-
-    function movef() {
-        counter3++;
-        if (counter3 == 20) {
-            clearInterval(timer3);
-            timer3 = null;
-            return;
-        }
-    }
-
-
-
-    cont3.classList.add('moveright');
-    var timer = setInterval(mover, 50);
+window.addEventListener('load', function() {
+    var e = document.getElementById('verticalline');
+    e.classList.add('moveup');
     var counter = 0;
+    var timer = setInterval(it, 50);
+
+    e = document.getElementById('upperline');
+    e.classList.add('moveleft');
+    counter = 0;
+    timer = setInterval(it, 50);
+
+    e = document.getElementById('bottomline');
+    e.classList.add('moveright');
+    counter = 0;
+    timer = setInterval(it, 50);
+
+    e = document.getElementById('welcometext');
+    e.classList.add('fadeup');
+    counter = 0;
+    timer = setInterval(it, 50);
 
 
-    function mover() {
+    e = document.getElementById('actualimage');
+    e.classList.add('fadein')
+    counter = 0;
+    timer = setInterval(it, 50);
 
+    e = document.getElementById('box1');
+    e.classList.add('fadein')
+    counter = 0;
+    timer = setInterval(it, 50);
+
+    e = document.getElementById('box2');
+    e.classList.add('fadein')
+    counter = 0;
+    timer = setInterval(it, 50);
+
+
+    function it() {
         counter++;
         if (counter == 20) {
             clearInterval(timer);
@@ -33,18 +45,5 @@ window.addEventListener("load", function() {
         }
     }
 
-    var cont2 = document.getElementById("login-container");
-    cont2.classList.add('moveleft');
-    var timer2 = setInterval(movel, 50);
-    var counter2 = 0;
-
-    function movel() {
-        counter2++;
-        if (counter2 == 20) {
-            clearInterval(timer2);
-            timer2 = null;
-            return;
-        }
-    }
 
 });

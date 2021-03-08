@@ -4,25 +4,27 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'providence-bold';
+    src: url('../fonts/Ogg-Regular.otf');
+}
+
 .nav-custom {
     margin: 0vh;
 }
 
-
-/* 0.1031991744066047 */
-
 a.navbar-brand.home-button {
-    color: black;
+    color: #f7f7f7;
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Prata', serif;
     font-size: 3.01vh;
 }
 
 a.nav-link {
-    color: black;
+    color: #f7f7f7;
     text-decoration: none;
     font-size: 2.064vh;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Prata', serif;
     text-align: center;
 }
 
@@ -39,7 +41,6 @@ img.logo-img {
 }
 
 .navbar-nav {
-    margin-left: auto;
     margin-right: 1.548vh;
 }
 
@@ -47,21 +48,11 @@ img.logo-img {
     height: 56.76vh;
     width: 41.28vh;
     margin: 0vh;
-    position: absolute;
-    top: 15%;
-    left: 7%;
-    background-color: white;
+    background-color: #f7f7f7;
     display: inline-block;
     text-align: center;
-    opacity: 0;
-    transition: all 0.5s ease;
-    transition-delay: 1.5s;
-    transform: translateX(70%);
-}
-
-.moveleft {
     opacity: 1;
-    transform: translateX(0%);
+    font-family: 'Prata', serif;
 }
 
 p.login-header {
@@ -72,7 +63,7 @@ p.login-header {
     color: black;
     justify-content: space-around;
     font-size: 5.16vh;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Prata', serif;
     padding-top: 3.096vh;
 }
 
@@ -94,6 +85,7 @@ p.login-header {
     height: 100%;
     color: #595f6e;
     padding-top: 2.064vh;
+    background-color: #f7f7f7;
     border: none;
     outline: none;
 }
@@ -130,7 +122,7 @@ p.login-header {
     background-color: none;
     padding: 1.032vh 2.064vh;
     font-size: 2.064vh;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Prata', serif;
     cursor: pointer;
     margin: 3.096vh;
 }
@@ -140,20 +132,14 @@ p.login-header {
     margin: 2.064vh;
 }
 
-
-/* .bg-light {
-    background-color: #022140!important;
-} */
+.bg-light {
+    background-color: black !important;
+}
 
 body,
 html {
     height: 100%;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.main-container {
-    height: 100%;
-    position: relative;
+    font-family: 'Prata', serif;
 }
 
 .googlelogo {
@@ -166,222 +152,139 @@ html {
 }
 
 .welcometext {
-    font-size: 18.576vh;
-    opacity: 1;
+    font-family: 'providence-bold';
+    font-size: 8vw;
+    opacity: 0;
+    transform: translateY(15%);
     transition: all 0.5s ease;
-    transition-delay: 1s;
-    transform: translateX(-25%);
+    transition-delay: 2.5s;
+}
+
+.fadeup {
+    opacity: 1;
+    transform: translateY(0px);
 }
 
 .welcomediv {
     position: absolute;
-    left: 35%;
-    top: 30%;
-    color: white;
-    transition: all 0.5s ease;
-    transition-delay: 0.5s;
-    opacity: 0;
-}
-
-.fadein {
+    color: #f7f7f7;
     opacity: 1;
 }
 
-.moveright {
-    transform: translateX(0vh);
-}
-
 body {
-    background-image: url("../images/background.jpg");
+    background-color: black;
     background-repeat: no-repeat;
     height: 100%;
     background-position: center;
 }
 
-.index-main-container {
-    margin-top: 5%;
-    font-size: 6.256vh;
-    text-align: center;
-    color: white;
-    line-height: 90%;
-}
-
-.introduction-index {
-    font-size: 2.064vh;
-    margin-left: 20%;
-    margin-right: 20%;
-    font-weight: 10 !important;
-    line-height: normal;
-    margin-top: 3%;
-    display: none;
-}
-
-.main-tiles {
-    margin-top: 3%;
-    height: 10.32vh;
+.main-container {
+    height: 90%;
     width: 100%;
     position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -25%);
-    line-height: normal;
 }
 
-.left-tile {
+.left-side {
     width: 50%;
     height: 100%;
-    background-color: #265077;
-    margin-right: 1.032vh;
-    position: relative;
-    bottom: 0vh;
-    left: 0vh;
-}
-
-.right-tile {
-    width: 50%;
-    margin-left: 10vh;
-    height: 100%;
-    background-color: #265077;
     position: absolute;
-    bottom: 0vh;
-    left: 30.96vh;
-}
-
-.buttonContainer {
-    text-align: center;
-    font-size: 3.096vh;
-}
-
-a.button {
-    display: inline-block;
-    height: 5.16vh;
-    width: 25.8vh;
-    font-size: 2.064vh;
-    text-decoration: none;
-    color: rgba(255, 255, 255, 1);
-    background-color: transparent;
-    border: .1032vh solid #73C5AD;
-    border-radius: 10.32vh;
-    padding-top: 1.2384vh;
-    margin: .516vh;
-    background-size: 200% 100%;
-    background-image: linear-gradient(to right, transparent 50%, #73C5AD 50%);
-    transition: all .5s ease;
-}
-
-a.button:hover {
-    color: rgba(255, 255, 255, 1);
-    background-color: #73C5AD;
-    background-position: -100% 100%;
-}
-
-.slider {
-    max-width: 700px;
-    margin: 80px auto;
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-}
-
-.slider .left-slide,
-.slider .right-slide {
-    position: absolute;
-    height: 40px;
-    width: 40px;
-    background-color: #444444;
-    border-radius: 50%;
-    color: #ffffff;
-    font-size: 20px;
-    top: 50%;
-    cursor: pointer;
-    margin-top: -20px;
-    text-align: center;
-    line-height: 40px;
-}
-
-.slider .left-slide:hover,
-.slider .right-slide:hover {
-    box-shadow: 0px 0px 10px black;
-    background-color: #29a8e2;
-}
-
-.slider .left-slide {
-    left: 30px;
-}
-
-.slider .right-slide {
-    right: 30px;
-}
-
-.slider .slider-items .item img {
-    max-width: 100%;
-    display: block;
-    animation: zoom 1s ease;
-}
-
-@keyframes zoom {
-    0% {
-        opacity: 0.5;
-    }
-    100% {
-        opacity: 1
-    }
-}
-
-.slider .slider-items .item {
-    display: none;
-    position: relative;
-}
-
-.slider .slider-items .item .caption {
-    position: absolute;
-    width: 100%;
-    height: 60px;
-    bottom: 0px;
     left: 0px;
-    background-color: rgba(0, 0, 0, .5);
-    line-height: 60px;
-    text-align: center;
-    color: #ffffff;
-    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
 }
 
-.slider .slider-items .item.active {
-    display: block;
+.right-side {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0px;
 }
 
-@media (max-width:150.15vh) {
-    .welcomediv {
-        display: none;
-    }
-    .login-container {
-        position: absolute;
-        left: 35%;
-        top: 15%;
-        transition-delay: 0.5s;
-    }
+.actualimage {
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/image_right_faculty.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.5s ease;
+    transition-delay: 2.5s;
 }
 
-@media (max-width:102.27vh) {
-    .login-container {
-        position: relative;
-        left: 0vw;
-        top: 15%;
-        transition-delay: 0.5s;
-    }
-    .main-container {
-        text-align: center;
-    }
-    .welcomediv {
-        display: none;
-    }
-    .index-main-container {
-        font-size: 6.192vh !important;
-    }
-    .introduction-index {
-        font-size: 1.548vh !important;
-    }
-    .main-container {
-        font-size: 90%;
-    }
+.verticalline {
+    background-image: url('../images/verticalline.png');
+    height: 0%;
+    width: 3px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    transition: all 0.5s ease;
+    transition-delay: 1s;
+}
+
+.moveup {
+    height: 100%;
+}
+
+.upperline {
+    background-image: url('../images/verticalline.png');
+    height: 3px;
+    width: 0%;
+    position: absolute;
+    right: 0px;
+    top: 30%;
+    transition: all 0.5s ease;
+    transition-delay: 1.25s;
+}
+
+.moveleft {
+    width: 80%;
+}
+
+.bottomline {
+    background-image: url('../images/verticalline.png');
+    height: 3px;
+    width: 0%;
+    position: absolute;
+    left: 0px;
+    bottom: 30%;
+    transition: all 0.5s ease;
+    transition-delay: 1.75s;
+}
+
+.moveright {
+    width: 80%;
+}
+
+.box1 {
+    height: 50%;
+    width: 50%;
+    background-color: thistle;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    transition-delay: 2.5s;
+}
+
+.box2 {
+    height: 50%;
+    width: 50%;
+    background-color: mediumturquoise;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    transition-delay: 2.5s;
+}
+
+.fadein {
+    opacity: 1;
 }
