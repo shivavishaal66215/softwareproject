@@ -45,8 +45,8 @@ img.logo-img {
 }
 
 .login-container {
-    height: 56.76vh;
-    width: 41.28vh;
+    /* height: 56.76vh;
+    width: 41.28vh; */
     margin: 0vh;
     background-color: #f7f7f7;
     display: inline-block;
@@ -57,6 +57,7 @@ img.logo-img {
 
 p.login-header {
     text-align: center;
+    margin-bottom: -10vh;
 }
 
 .login-content {
@@ -70,19 +71,15 @@ p.login-header {
 .form {
     height: 5.16vh;
     position: relative;
-    margin: 2.064vh;
-    margin-left: 4.128vh;
-    margin-right: 4.128vh;
+    margin: 4vh;
+    margin-left: 4vh;
+    margin-right: 4vh;
     overflow: hidden;
 }
 
-.pass {
-    margin-top: 3.096vh;
-}
-
 .form input {
-    width: 100%;
-    height: 100%;
+    width: 15vw;
+    height: 5vh;
     color: #595f6e;
     padding-top: 2.064vh;
     background-color: #f7f7f7;
@@ -98,23 +95,27 @@ p.login-header {
     width: 100%;
     pointer-events: none;
     border-bottom: .10vh solid black;
+    margin-top: 20vh;
 }
 
 .content-name {
+    font-size: 1.75vh;
     position: absolute;
     bottom: 0.516vh;
     left: 0vh;
     transition: all 0.3s ease;
+    padding-top: 100px;
 }
 
 .form input:focus+.label-name .content-name,
 .form input:valid+.label-name .content-name {
-    transform: translateY(-2.1vh);
+    transform: translateY(-2vh);
 }
 
 .forgot {
     margin-top: -1.032vh;
     margin-bottom: 2.064vh;
+    font-size: 2vh;
 }
 
 .btn {
@@ -125,6 +126,7 @@ p.login-header {
     font-family: 'Prata', serif;
     cursor: pointer;
     margin: 3.096vh;
+    margin-top: 0px;
 }
 
 .seperator-line {
@@ -143,12 +145,24 @@ html {
 }
 
 .googlelogo {
+    height: 5.16vh;
+    width: 5.16vh;
     margin-top: 2.064vh;
     margin-right: 3.096vh;
+    margin-bottom: 4vh;
+    background-image: url('../images/google.png');
+    background-size: cover;
+    display: inline-block;
 }
 
 .facebooklogo {
+    height: 5.16vh;
+    width: 5.16vh;
     margin-top: 2.064vh;
+    margin-bottom: 4vh;
+    background-image: url('../images/facebook.png');
+    background-size: cover;
+    display: inline-block;
 }
 
 .welcometext {
@@ -287,4 +301,11 @@ body {
 
 .fadein {
     opacity: 1;
+}
+
+.invaliduser {
+    margin-bottom: -3.096vh;
+    margin-top: 3.096vh;
+    font-size: 1.75vh;
+    color: #800000;
 }
