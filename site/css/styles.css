@@ -78,7 +78,7 @@ p.login-header {
 }
 
 .form input {
-    width: 15vw;
+    width: 41.28vh;
     height: 5vh;
     color: #595f6e;
     font-size: 1.75vh;
@@ -309,4 +309,16 @@ body {
     margin-top: 3.096vh;
     font-size: 1.75vh;
     color: #800000;
+}
+
+@media (max-width:991px) {
+    .left-side {
+        display: none;
+    }
+    .right-side {
+        width: 100%;
+    }
+    .actualimage {
+        transition-delay: 0s;
+    }
 }
