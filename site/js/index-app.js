@@ -21,7 +21,7 @@ window.addEventListener('load', function() {
     vert = document.getElementById('actualimage');
     vert.classList.add('fadein');
 
-    vert = document.getElementById('sidebar');
+    vert = document.getElementById('links');
     vert.classList.add('fadein2');
 
 
