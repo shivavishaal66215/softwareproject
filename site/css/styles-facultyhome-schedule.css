@@ -76,73 +76,9 @@ body {
     position: relative;
 }
 
-.user {
-    position: relative;
-}
-
-.main-container {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
-
-.heading {
-    font-size: 6vw;
-    color: #f7f7f7;
-    position: absolute;
-    top: 5%;
-}
-
 .maincontainer{
     width: 100%;
     height: 100%;
-    color: white;
-    display: flex;
-    margin: auto;
-    justify-content: space-around;
-    align-items: center;
-    background-color: black;
-}
-
-.containers{
-    width: 23%;
-    height: 23%;
-    font-size: 3.5vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: width 0.3s ease,height 0.3s ease;
-}
-
-.pink{
     background-color: #DB7093;
 }
 
-.green{
-    background-color: #3CB371 ;
-}
-
-.purple{
-    background-color: #DDA0DD;
-}
-
-.makebigger{
-    width: 46%;
-    height: 46%;
-}
-
-.displayclass{
-    width: 100%;
-    height: 100%;
-    background: black;
-    display: none;
-    justify-content: center;
-    align-items: center;
-}
-
-.makefullscreen{
-    width: 100%;
-    height: 100%;
-}
