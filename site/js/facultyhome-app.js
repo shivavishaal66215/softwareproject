@@ -47,10 +47,11 @@ window.addEventListener('load',function(){
                 divtoinsert.classList = right.classList;
                 
                 divtoinsert.style.background = right.style.background;
+                divtoinsert.style.border = 'None';
                 divtoinsert.style.color = 'white';
                 var maindiv = document.getElementById('displayclass');
 
-                
+                document.querySelector('header').style.display = 'None';
                 document.querySelector('.main-container').style.display = 'None';
                 document.querySelector('.displayclass').style.display = 'flex';
                 dup = right.textContent;

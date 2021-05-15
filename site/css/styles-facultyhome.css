@@ -106,6 +106,18 @@ body {
     background-color: black;
 }
 
+#upperline{
+    height: 3px;
+    width: 70%;
+    background-color: white;
+}
+
+#lowerline{
+    height: 3px;
+    width: 70%;
+    background-color: white;
+}
+
 .containers{
     width: 23%;
     height: 23%;
@@ -113,20 +125,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 3px solid white;
     transition: width 0.3s ease,height 0.3s ease;
 }
 
-.pink{
-    background-color: #DB7093;
-}
-
-.green{
-    background-color: #3CB371 ;
-}
-
-.purple{
-    background-color: #DDA0DD;
-}
 
 .makebigger{
     width: 46%;
