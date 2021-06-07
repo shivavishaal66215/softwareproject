@@ -1,156 +1,176 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
 }
 
 .nav-custom {
-    margin: 0vh;
+	margin: 0vh;
 }
 
 @font-face {
-    font-family: 'providence-bold';
-    src: url('../fonts/Ogg-Regular.otf');
+	font-family: "providence-bold";
+	src: url("../fonts/Ogg-Regular.otf");
 }
 
 a.navbar-brand.home-button {
-    color: #f7f7f7;
-    text-decoration: none;
-    font-size: 3.01vh;
+	color: #f7f7f7;
+	text-decoration: none;
+	font-size: 3.01vh;
 }
 
 a.nav-link {
-    color: #f7f7f7;
-    text-decoration: none;
-    font-size: 2.064vh;
-    text-align: center;
-    margin-left: 3.096vh;
+	color: #f7f7f7;
+	text-decoration: none;
+	font-size: 2.064vh;
+	text-align: center;
+	margin-left: 3.096vh;
 }
 
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
-    outline: none;
-    box-shadow: none;
+	outline: none;
+	box-shadow: none;
 }
 
 img.logo-img {
-    margin-left: 3.096vh;
+	margin-left: 3.096vh;
 }
 
 .navbar-nav {
-    margin-right: 1.548vh;
+	margin-right: 1.548vh;
 }
 
 .bg-light {
-    background-color: #DDA0DD!important;
+	background-color: #dda0dd !important;
 }
 
 body,
 html {
-    height: 100%;
-    width: 100%;
-    font-family: 'providence-bold';
+	height: 100%;
+	width: 100%;
+	font-family: "providence-bold";
 }
 
 body {
-    background-color: #DDA0DD;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
-    background-position: center;
+	background-color: #dda0dd;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+	background-position: center;
+	font-family: "Prata", serif;
 }
 
 .logoimg {
-    background-image: url('../images/logo_white_noi.png');
-    height: 10vh;
-    width: 10vh;
-    background-size: cover;
-    position: absolute;
-    left: 85%;
-    top: -10%;
-    opacity: 0;
+	background-image: url("../images/logo_white_noi.png");
+	height: 10vh;
+	width: 10vh;
+	background-size: cover;
+	position: absolute;
+	left: 85%;
+	top: -10%;
+	opacity: 0;
 }
 
 .navcontainer {
-    position: relative;
+	position: relative;
 }
 
-
-.maincontainer{
-    width: 100%;
-    min-height: 100%;
-    background-color: #DDA0DD ;
+.maincontainer {
+	width: 100%;
+	min-height: 100%;
+	background-color: #dda0dd;
 }
 
-
-.row{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.row {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .heading {
-    width: 100%;
-    font-size: 6vw;
-    color: #f7f7f7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5%;
+	width: 100%;
+	font-size: 6vw;
+	color: #f7f7f7;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 5%;
 }
 
-.overallline{
-    width: 80%;
-    height: 3px;
-    background-color: #f7f7f7;
-    margin-bottom: 2%;
+.overallline {
+	width: 80%;
+	height: 3px;
+	background-color: #f7f7f7;
+	margin-bottom: 2%;
 }
 
-.entry{
-    width: 72%;
-    padding-left: 0px;
-    padding-right: 0px;
-    background-color: #f7f7f7;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 2%;
+.entry {
+	width: 72%;
+	padding-left: 0px;
+	padding-right: 0px;
+	background-color: #f7f7f7;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 2%;
 }
 
-.sub-entry{
-    width: 25%;
-    padding-top: 2.5%;
-    padding-bottom: 2.5%;
-    font-size: 1.88vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.sub-entry {
+	width: 25%;
+	padding-top: 2.5%;
+	padding-bottom: 2.5%;
+	font-size: 1.88vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.line1{
-    height: 5vw;
-    width: 1px;
-    background-color: black;
+.line1 {
+	height: 5vw;
+	width: 1px;
+	background-color: black;
 }
 
-.reschedulebutton{
-    background-color: #E45B5B;
-    height: 100%;
-    color: #f7f7f7;
-    transition: background-color .5s ease;
+.reschedulebutton {
+	background-color: #e45b5b;
+	height: 100%;
+	color: #f7f7f7;
+	transition: background-color 0.5s ease;
 }
 
-.processing{
-    background-color: #D7B560;
+.processing {
+	background-color: #d7b560;
 }
 
-body{
-    opacity: 0;
-    transition: opacity 1s ease;
+body {
+	opacity: 0;
+	transition: opacity 1s ease;
 }
 
-.makevisible{
-    opacity: 1;
+.makevisible {
+	opacity: 1;
+}
+
+.nosupport {
+	opacity: 0;
+}
+
+@media only screen and (max-width: 767px) {
+	body {
+		color: black;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: white;
+	}
+	header,
+	.maincontainer {
+		display: none;
+	}
+	.nosupport {
+		opacity: 1;
+	}
 }
