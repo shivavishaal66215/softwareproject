@@ -121,11 +121,13 @@ body {
 
 a.button {
 	line-height: normal;
-	display: inline-block;
+	display: inline-flex;
 	height: 5.16vh;
 	/* width: 15vw; */
 	font-size: 2vh;
 	text-align: center;
+	justify-content: center;
+	align-items: center;
 	text-decoration: none;
 	color: rgba(255, 255, 255, 1);
 	background-color: transparent;
