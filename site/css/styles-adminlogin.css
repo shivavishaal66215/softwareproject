@@ -191,6 +191,7 @@ body {
 	background-repeat: no-repeat;
 	height: 100%;
 	background-position: center;
+	user-select: none;
 }
 
 .main-container {

@@ -191,6 +191,7 @@ body {
 	background-repeat: no-repeat;
 	height: 100%;
 	background-position: center;
+	user-select: none;
 }
 
 .main-container {
@@ -312,6 +313,7 @@ body {
 }
 
 .nosupport {
+	display: none;
 	opacity: 0;
 }
 
@@ -328,6 +330,7 @@ body {
 		display: none;
 	}
 	.nosupport {
+		display: block;
 		opacity: 1;
 	}
 }

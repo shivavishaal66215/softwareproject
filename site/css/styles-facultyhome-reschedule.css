@@ -149,6 +149,7 @@ body {
 body {
 	opacity: 0;
 	transition: opacity 1s ease;
+	user-select: none;
 }
 
 .makevisible {

@@ -59,13 +59,14 @@ body {
 	background-repeat: no-repeat;
 	height: 100%;
 	background-position: center;
+	user-select: none;
 }
 
 .index-main-container {
 	font-size: 10vh;
 	color: #f7f7f7;
 	width: 100%;
-	height: 100%;
+	height: 90%;
 	text-align: right;
 	position: relative;
 }
