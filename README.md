@@ -8,8 +8,8 @@ The goal of the system is to facilitate the easy allocation of invigilators to e
 
 # Types of users in the system
 
-Admin
-Faculty
+1. Admin
+2. Faculty
 
 # Privilege of an Admin
 
